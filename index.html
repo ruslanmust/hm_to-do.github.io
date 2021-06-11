@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Список дел</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/list-todo.css">
+		<link rel="stylesheet" type="text/css" href="styles/task.css">
+	</head>
+
+	<body class="central-container js-body">
+		<main>
+			<div class="fixed-container clearfix">
+				<section class="todo btn-res-stl">
+					<h1 class="todo__title">Список дел:</h1>
+
+					<ul class="list-reset js-list"></ul>
+
+					<p class="list-empty js-list-empty">Список пуст…</p>
+				</section>
+
+				<section class="task btn-res-stl">
+					<h2 class="task__title">Добавить новое дело</h2>
+
+					<form class="task__form js-task__form" action="#">
+						<label class="label">
+							<span class="label_wrap">* Название</span>
+
+							<input class="task__name js-task__name" name="name" required>
+						</label>
+
+						<label class="label">
+							<span class="label_wrap">* Описание</span>
+
+							<textarea class="task__textarea js-task__textarea" name="discription" required></textarea>
+						</label>
+
+						<button class="btn-submit" type="submit">Добавить дело</button>
+					</form>
+				</section>
+			</div>
+		</main>
+
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="script.js"></script>
+
+		<!--скрипт для снятия фокуса-->
+<!--<script src="focus-visible.js"></script>-->
+	</body>
+</html>

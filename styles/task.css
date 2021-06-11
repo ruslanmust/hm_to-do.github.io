@@ -1,0 +1,92 @@
+.task {
+    float: right;
+    width: 470px;
+}
+
+.task__title {
+    margin-bottom: 20px;
+
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.task__form {
+    min-height: 500px;
+    padding: 49px 40px 56px;
+
+    background-color: #fff;
+}
+
+.label {
+    font-size: 14px;
+
+    color: #8993ad;
+
+    display: inline-block;
+    margin-bottom: 28px;
+
+}
+
+.task__name {
+    display: block;
+
+    min-width: 390px;
+    min-height: 45px;
+
+    border: 1px solid #ebebeb;
+    background: #fcfcfc;
+    outline: none;
+
+    padding-left: 8px;
+}
+
+.task__textarea {
+    display: block;
+
+    min-width: 390px;
+    min-height: 230px;
+
+    resize: none;
+
+    border: 1px solid #ebebeb;
+    background: #fcfcfc;
+    outline: none;
+
+    padding: 8px 0 0 8px;
+}
+
+.btn-submit {
+
+    border-style: none;
+    padding: 20px 54px;
+
+    font-size: 16px;
+
+    color: #fff;
+    background-color: #2174fd;
+    cursor: pointer;
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.task__name:focus,
+.task__textarea:focus,
+.btn-submit:focus {
+    /*border: #696682 solid 2px;*/
+    box-shadow: inset 0 0 0 2px #696682;
+}
+
+.task__name:hover,
+.task__textarea:hover {
+    border: #a8a8a8 solid 1px;
+}
+
+.label_wrap {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/*.error {*/
+/*    border: 1px solid red;*/
+/*}*/

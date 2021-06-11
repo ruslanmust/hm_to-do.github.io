@@ -1,0 +1,90 @@
+
+/*Наследование box-sizing. Заданная ширина блока (width) включает в себя padding и border */
+
+html {
+	box-sizing: border-box; 
+}
+
+/*Наследование от html правила box-sizing: border-box; 
+для всех элемнтов, включая псевдо классы*/
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
+
+body {
+	min-width: 960px; /* для всех элементов можно задать минимальную ширину */ 
+	margin: 0; /* body с margin 0 */
+	background-color: transparent; /*для всех элементов можно задать transparent */ 
+	font-family: "Arial", sans-serif; /*в первых кавычках задается шрифт документа, 
+	если он не загрузился, происходит подмена шрифта на следующий в списке */
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: -.02em;
+}
+
+/*body.modal-active {*/
+/*	overflow: hidden; !* маска для body. отмена прокручивания при модальном окне*!
+/*}*/
+
+.central-container {
+	padding: 30px 0 30px;
+
+    background-color: #f6f6f6;
+}
+
+.btn-res-stl {
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+
+img {
+	max-width: 100%; /* все изображения при максимальном размере экрана
+	имеют шририну не больше 100%*/
+}
+
+a {
+	text-decoration: none; /* убираем форматирование ссылок */ 
+	color: inherit; /* цвет ссылок наследуется от html */ 
+}
+
+
+/*address {
+    font-style: normal; // использовал на новостной странице 
+}*/
+
+.list-reset {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.visiually-hidden { /* этот класс скрывает элемент визуально, но его прочтут скринридеры */
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.clearfix::after { /*псевдораспорки. Добавить этот класс к контейнеру, 
+	внутри которого лежат флоатные колонки*/
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fixed-container { /* класс для контейнера-центровшика */ 
+	width: 960px;
+	margin: 0 auto;
+}

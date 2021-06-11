@@ -1,0 +1,106 @@
+.todo {
+    float: left;
+    width: 470px;
+}
+
+.todo__title {
+    margin-bottom: 20px;
+
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.list-empty {
+    margin: 0;
+    padding-top: 32px;
+
+    font-size: 16px;
+
+    color: #8993ad;
+}
+
+.item {
+
+    min-height: 61px;
+
+    background-color: #fff;
+
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item__name {
+    padding: 20px 10px 20px 20px;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    display: inline-block;
+    max-width: 340px;
+    overflow-wrap: break-word;
+}
+
+.btn-delete {
+    padding: 1px 20px 20px;
+
+    border-style: none;
+    background: url("../img/clear-button.png") no-repeat center;
+
+    cursor: pointer;
+
+}
+
+.btn-collapse {
+    padding: 1px 30px 30px;
+    margin-left: auto;
+
+    border-style: none;
+    background: url("../img/arrow.png") no-repeat center;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+
+/*.btn-collapse:focus-visible {*/
+/*    outline: 2px solid blue;*/
+/*    outline-offset: 2px;*/
+/*}*/
+
+.btn-collapse.rotate {
+    transform: rotate(180deg);
+}
+
+.item__text {
+    margin: 0;
+    padding: 10px 20px;
+    min-height: 82px;
+
+    font-size: 14px;
+
+    color: #8993ad;
+
+    word-break: break-word;
+}
+
+.wrap-item__text {
+    min-height: auto;
+
+    border-top: #8993ad38 1px solid;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/*!*убираем фокус по клику, но оставляем по tab*!*/
+/*.js-focus-visible :focus:not(.focus-visible) {*/
+/*    outline: 0;*/
+/*}*/
